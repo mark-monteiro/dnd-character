@@ -10,10 +10,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.8)
     blankslate (2.1.2.4)
-    byebug (8.2.1)
     classifier-reborn (2.0.4)
       fast-stemmer (~> 1.0)
-    coderay (1.1.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -95,25 +93,14 @@ GEM
       rb-inotify (>= 0.9)
     maruku (0.7.0)
     mercenary (0.3.5)
-    method_source (0.8.2)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     net-dns (0.8.0)
     nokogiri (1.6.7-x86-mingw32)
       mini_portile2 (~> 2.0.0.rc2)
-    octopress-debugger (1.0.2)
-      jekyll
-      pry-byebug
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
-    pry (0.10.3)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-byebug (3.3.0)
-      byebug (~> 8.0)
-      pry (~> 0.10)
     public_suffix (1.5.2)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
@@ -125,7 +112,6 @@ GEM
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
     sass (3.4.19)
-    slop (3.6.0)
     terminal-table (1.5.2)
     thread_safe (0.3.5)
     toml (0.1.2)
@@ -141,7 +127,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  octopress-debugger
 
 BUNDLED WITH
    1.10.6
