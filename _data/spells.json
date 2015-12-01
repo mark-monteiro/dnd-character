@@ -1,0 +1,98 @@
+[
+	{
+		"Name": "Thorn Whip",
+		"Classes": ["D"],
+		"Type": "transmutation",
+		"Ritual": false,
+		"Level": 0,
+		"CastingTime": "1 action",
+		"Range": "30 ft.",
+		"Components": "V,S,M (stem of plant with thorns)",
+		"Duration": "Instantaneus",
+		"Description": ""
+	},
+	{
+		"Name": "Produce Flame",
+		"Classes": ["D"],
+		"Type": "conjuration",
+		"Ritual": false,
+		"Level": 0,
+		"CastingTime": "1 action",
+		"Range": "Self",
+		"Components": "V,S",
+		"Duration": "10 minutes",
+		"Description": ""
+	},
+	{
+		"Name": "Entangle",
+		"Classes": ["D"],
+		"Type": "conjuration",
+		"Ritual": false,
+		"Level": 1,
+		"CastingTime": "1 action",
+		"Range": "30 ft.",
+		"Components": "V,S,M",
+		"Duration": "Concentration (up to 1 min.)",
+		"Description": ""
+	},
+	{
+		"Name": "Detect Magic",
+		"Classes": ["D"],
+		"Type": "divination",
+		"Ritual": true,
+		"Level": 1,
+		"CastingTime": "1 action",
+		"Range": "Self",
+		"Components": "V,S",
+		"Duration": "Concentration (up to 10 min.)",
+		"Description": ""
+	},
+	{
+		"Name": "Pass Without Trace",
+		"Classes": ["D"],
+		"Type": "abjuration",
+		"Ritual": false,
+		"Level": 2,
+		"CastingTime": "1 action",
+		"Range": "Self",
+		"Components": "V,S,M (ashes from a burned leaf of mistletoe and a spruce sprig)",
+		"Duration": "Concentration (up to an hour)",
+		"Description": ""
+	},
+	{
+		"Name": "Moonbeam",
+		"Classes": ["D"],
+		"Type": "",
+		"Ritual": false,
+		"Level": 2,
+		"CastingTime": "1 action",
+		"Range": "120 ft.",
+		"Components": "V,S,M ()",
+		"Duration": "Concentration (Up to 1 min.)",
+		"Description": ""
+	},
+	{
+		"Name": "Charm Person",
+		"Classes": ["D"],
+		"Type": "enchantment",
+		"Ritual": false,
+		"Level": 1,
+		"CastingTime": "1 action",
+		"Range": "30 ft.",
+		"Components": "V,S",
+		"Duration": "1 Hour",
+		"Description": ""
+	},
+	{
+		"Name": "Cure Wounds",
+		"Classes": ["D"],
+		"Type": "",
+		"Ritual": false,
+		"Level": 1,
+		"CastingTime": "1 action",
+		"Range": "Touch",
+		"Components": "V,S",
+		"Duration": "Instantaneus",
+		"Description": ""
+	},
+]
