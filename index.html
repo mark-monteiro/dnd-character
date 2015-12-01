@@ -1,23 +1,30 @@
 ---
 layout: default
+title: Glorfindel
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Spells</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  {% assign grouped_spells = site.data.spells | group_by:"level" %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  {% for levelSpells in grouped_spells %}
+    <h2>Level {{levelSpells.name}} Spells</h2>
+    <ul class="spell-list">
+      {% for spell in levelSpells.items %}
+        <li>
+          <h3>{{spell.name}} <small>{%if spell.ritual%}RITUAL{%endif%} ({{spell.type}})</small></h3>
+          <dl class='dl-horizontal'>
+            <dt>Name</dt><dd> </dd>
+            <dt>CastingTime</dt><dd>{{spell.time}}</dd>
+            <dt>Range</dt><dd>{{spell.Range}}</dd>
+            <dt>Components</dt><dd>{{spell.components}}</dd>
+            <dt>Duration</dt><dd>{{spell.duration}}</dd>
+            <dt>Description</dt><dd>{{spell.description}}</dd>
+          </dl>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
 </div>

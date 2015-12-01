@@ -51,3 +51,12 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.spell-list {
+   margin-left: 0;
+   list-style: none;
+
+   > li {
+      margin-bottom: $spacing-unit;
+   }
+}
