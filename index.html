@@ -5,26 +5,56 @@ title: Glorfindel
 
 <div class="home">
 
-  <h1 class="page-heading">Spells</h1>
+  <h1>Spells</h1>
 
-  {% assign grouped_spells = site.data.spells | group_by:"level" %}
+  {% assign grouped_spells = site.data.spells | where: "prepared", true | group_by:"level" %}
 
-  {% for levelSpells in grouped_spells %}
-    <h2>Level {{levelSpells.name}} Spells</h2>
-    <ul class="spell-list">
-      {% for spell in levelSpells.items %}
-        <li>
-          <h3>{{spell.name}} <small>{%if spell.ritual%}RITUAL{%endif%} ({{spell.type}})</small></h3>
-          <dl class='dl-horizontal'>
-            <dt>Name</dt><dd> </dd>
-            <dt>CastingTime</dt><dd>{{spell.time}}</dd>
-            <dt>Range</dt><dd>{{spell.Range}}</dd>
-            <dt>Components</dt><dd>{{spell.components}}</dd>
-            <dt>Duration</dt><dd>{{spell.duration}}</dd>
-            <dt>Description</dt><dd>{{spell.description}}</dd>
-          </dl>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
+  <div class='containter'>
+    {% for levelSpells in grouped_spells %}
+      <!--
+      <h2>
+        {%if levelSpells.name == '0' %}
+          Cantrips
+        {%else%}
+          Level {{levelSpells.name}} Spells
+        {%endif%}
+      </h2>
+      -->
+      <ul class="spell-list">
+        {% for spell in levelSpells.items %}
+          <li>
+            <span class="badge">{{spell.level}}</span>
+            <h3>
+              {{spell.name}}
+              {%if spell.ritual%}<i class='fa fa-magic' data-toggle="tooltip" data-placement="top" title="Ritual (10 minutes)"></i>{%endif%}
+              <small>({{spell.type}})</small>
+            </h3>
+            <div class='row'>
+              <div class='col-xs-4'>
+                <dl class='dl-horizontal'>
+                  <dt>Casting Time</dt><dd>{{spell.time}}</dd>
+                  <dt>Range</dt><dd>{{spell.range}}</dd>
+                  <dt>Components</dt>
+                  <dd>
+                    {{spell.components}}
+                    {%if spell.material-components %}
+                      <i class='fa fa-asterisk' data-toggle="tooltip" data-placement="top" title="{{spell.material-components}}"></i>
+                    {%endif%}
+                  </dd>
+                  <!--<dt>Components</dt><dd class='overflow-ellipses' data-toggle='tooltip' title='{{spell.components}}'>{{spell.components}}</dd>-->
+                  <dt>Duration</dt><dd>{{spell.duration}}</dd>
+                </dl>
+              </div>
+              <div class='col-xs-8'>
+                <dl>
+                  <dt>Description</dt>
+                  <dd>{{spell.description}}</dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
 </div>

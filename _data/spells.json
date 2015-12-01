@@ -1,42 +1,47 @@
 [
 	{
 		"name": "Thorn Whip",
+		"prepared": true,
 		"classes": ["D"],
-		"type": "transmutation",
+		"type": "Transmutation",
 		"ritual": false,
 		"level": 0,
 		"time": "1 action",
 		"range": "30 ft.",
-		"components": "V,S,M (stem of plant with thorns)",
+		"components": "V,S,M",
+		"material-components": "stem of plant with thorns",
 		"duration": "Instantaneus",
-		"description": ""
+		"description": "You create a long, vine-Iike whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you. This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)."
 	},
 	{
 		"name": "Produce Flame",
+		"prepared": true,
 		"classes": ["D"],
-		"type": "conjuration",
+		"type": "Conjuration",
 		"ritual": false,
 		"level": 0,
 		"time": "1 action",
 		"range": "Self",
 		"components": "V,S",
 		"duration": "10 minutes",
-		"description": ""
+		"description": "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again. You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes Id8 fire damage. This spell's damage increases by Id8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
 	},
 	{
 		"name": "Entangle",
+		"prepared": true,
 		"classes": ["D"],
-		"type": "conjuration",
+		"type": "Conjuration",
 		"ritual": false,
 		"level": 1,
 		"time": "1 action",
 		"range": "30 ft.",
 		"components": "V,S,M",
 		"duration": "Concentration (up to 1 min.)",
-		"description": ""
+		"description": "Grasping weeds and vines sprout from the ground in a 20 foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.</br>A creature in the area when you cast the spell must succeed on a Strength saving throw of be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success it frees itself. When the spell ends, the Conjured plants wilt away."
 	},
 	{
 		"name": "Detect Magic",
+		"prepared": true,
 		"classes": ["D"],
 		"type": "divination",
 		"ritual": true,
@@ -45,34 +50,39 @@
 		"range": "Self",
 		"components": "V,S",
 		"duration": "Concentration (up to 10 min.)",
-		"description": ""
+		"description": "For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</br>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
 	},
 	{
 		"name": "Pass Without Trace",
+		"prepared": true,
 		"classes": ["D"],
-		"type": "abjuration",
+		"type": "Abjuration",
 		"ritual": false,
 		"level": 2,
 		"time": "1 action",
 		"range": "Self",
-		"components": "V,S,M (ashes from a burned leaf of mistletoe and a spruce sprig)",
+		"components": "V,S,M",
+		"material-components": "ashes from a burned leaf of mistletoe and a spruce sprig",
 		"duration": "Concentration (up to an hour)",
-		"description": ""
+		"description": "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage."
 	},
 	{
 		"name": "Moonbeam",
+		"prepared": true,
 		"classes": ["D"],
-		"type": "",
+		"type": "Evocation",
 		"ritual": false,
 		"level": 2,
 		"time": "1 action",
 		"range": "120 ft.",
-		"components": "V,S,M ()",
+		"components": "V,S,M",
+		"material-components": "several seeds of any moonseed plant and a piece of opalescent feldspar",
 		"duration": "Concentration (Up to 1 min.)",
-		"description": ""
+		"description": "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.</br>When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much on a successful one.</br>A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spells light.</br>On each of your turns after you cast this spell use can use an action to move the beam 60 feet in any direction.</br>At Higher Levels. When you cast this spell using a spell slot 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
 	},
 	{
 		"name": "Charm Person",
+		"prepared": true,
 		"classes": ["D"],
 		"type": "enchantment",
 		"ritual": false,
@@ -81,18 +91,46 @@
 		"range": "30 ft.",
 		"components": "V,S",
 		"duration": "1 Hour",
-		"description": ""
+		"description": "You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</br>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
 	},
 	{
 		"name": "Cure Wounds",
+		"prepared": true,
 		"classes": ["D"],
-		"type": "",
+		"type": "Evocation",
 		"ritual": false,
 		"level": 1,
 		"time": "1 action",
 		"range": "Touch",
 		"components": "V,S",
 		"duration": "Instantaneus",
-		"description": ""
+		"description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</br>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+	},
+	{
+		"name": "Shillelagh",
+		"prepared": true,
+		"classes": ["D"],
+		"type": "Transmutation",
+		"ritual": false,
+		"level": 0,
+		"time": "1 bonus action",
+		"range": "Touch",
+		"components": "V, S, M",
+		"material-components": "mistletoe, a shamrock leaf, and a club or quarterstaff",
+		"duration": "1 Minutes",
+		"description": "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon."
+	},
+	{
+		"name": "Thunderwave",
+		"prepared": true,
+		"classes": ["D"],
+		"type": "Evocation",
+		"ritual": false,
+		"level": 1,
+		"time": "1 Action",
+		"range": "Self (15 ft. cube)",
+		"components": "V,S",
+		"duration": "1 Minutes",
+		"description": "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed.</br>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.</br>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
 	},
 ]

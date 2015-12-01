@@ -52,11 +52,45 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+// Enable tooltips on fa icons
+.fa[data-toggle="tooltip"] {
+  display: inline-block;
+}
+
+.overflow-ellipses {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .spell-list {
    margin-left: 0;
    list-style: none;
 
+   h3 {
+    display: inline-block;
+    margin: 10px 0;
+   }
+
+   .badge, h3 {
+      vertical-align: middle;
+   }
+
    > li {
       margin-bottom: $spacing-unit;
+
+      dl.dl-horizontal {
+        $dtWidth: 100px;
+        dt {
+          width: $dtWidth;
+          &:after {
+            content: ":";
+          }
+        }
+
+        dd {
+          margin-left: $dtWidth + 10px;
+        }
+      }
    }
 }
