@@ -31,34 +31,44 @@ prose:
   media: 'media'
   ignore:
     - _config.yml
+    - Gemfile
+    - Gemfile.lock
+    - about.md
+    - *.ico
+    - feed.xml
+    - index.html
+    - links.jsonp
     - /_layouts
     - /_includes
     - /_sass
     - /css
     - /scripts
-    - .*
   metadata:
     _spells:
       - name: "name"
         field:
+          label: "Name"
           element: "text"
 
       - name: "prepared"
         field:
+          label: "Prepared"
           element: "checkbox"
           value: false
 
       - name: "classes"
         field:
+          label: "Classes"
           element: "multiselect"
           options:
             - name: Druid
-              value: druid
+              value: d
             - name: Cleric
-              value: cleric
+              value: c
 
       - name: "type"
         field:
+          label: "Spell Type"
           element: "select"
           options:
             - name: Abjuration
@@ -74,34 +84,39 @@ prose:
 
       - name: "ritual"
         field:
+          label: "Ritual"
           element: "checkbox"
           value: false
 
       - name: "level"
         field:
+          label: "Level"
           element: "number"
 
       - name: "time"
         field:
-          element: "text"
           label: "Casting Time"
+          element: "text"
 
       - name: "range"
         field:
+          label: "Range"
           element: "text"
 
       - name: "components"
         field:
+          label: "Components"
           element: "text"
 
       - name: "material-components"
         field:
-          element: "text"
           label: "Material Components"
+          element: "text"
           help: ex. "Additional meterial component required for the spell (i.e. a forked twig)"
 
       - name: "duration"
         field:
+          label: "Duration"
           element: "text"
 
 collections:
