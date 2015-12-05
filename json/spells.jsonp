@@ -4,7 +4,7 @@ spells([
 {% for spell in site.spells %}
    {
       "name": "{{ spell.name }}",
-      "value": "{{ spell.name | slugify }}""
+      "value": "{{ spell.name | slugify }}"
    } {% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]);
