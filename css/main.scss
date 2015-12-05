@@ -63,7 +63,7 @@ $on-laptop:        800px;
   text-overflow: ellipsis;
 }
 
-#spell-list {
+.spell-list {
   margin-left: 0;
   list-style: none;
 
@@ -81,13 +81,7 @@ $on-laptop:        800px;
     margin: 10px 0;
   }
 
-  .badge, h3 {
-    vertical-align: middle;
-  }
-
-  > li {
-    margin-bottom: $spacing-unit;
-
+  .spell {
     dl.dl-horizontal {
       $dtWidth: 100px;
       dt {

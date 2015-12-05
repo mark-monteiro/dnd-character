@@ -1,0 +1,32 @@
+{% assign spell = include.spell %}
+
+<div class='spell'>
+   <h3>
+      {{spell.name}}
+      {%if spell.ritual%}<i class='fa fa-magic' data-toggle="tooltip" data-placement="top" title="Ritual (10 minutes)"></i>{%endif%}
+      <small>({{spell.type}})</small>
+   </h3>
+   <div class='row'>
+      <div class='col-xs-4'>
+         <dl class='dl-horizontal'>
+            <dt>Casting Time</dt><dd>{{spell.time}}</dd>
+            <dt>Range</dt><dd>{{spell.range}}</dd>
+            <dt>Components</dt>
+            <dd>
+               {{spell.components}}
+               {%if spell.material-components %}
+               <i class='fa fa-asterisk' data-toggle="tooltip" data-placement="top" title="{{spell.material-components}}"></i>
+               {%endif%}
+            </dd>
+            <!--<dt>Components</dt><dd class='overflow-ellipses' data-toggle='tooltip' title='{{spell.components}}'>{{spell.components}}</dd>-->
+            <dt>Duration</dt><dd>{{spell.duration}}</dd>
+         </dl>
+       </div>
+       <div class='col-xs-8'>
+         <dl>
+            <dt>Description</dt>
+            <dd>{{spell.description}}</dd>
+         </dl>
+      </div>
+   </div>
+</div>
