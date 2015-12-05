@@ -34,7 +34,7 @@ prose:
     - Gemfile
     - Gemfile.lock
     - about.md
-    - *.ico
+    - dnd-favicon.ico
     - feed.xml
     - index.html
     - links.jsonp
