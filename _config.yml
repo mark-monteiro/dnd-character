@@ -16,9 +16,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Github Defaults
-#highlighter: pygments
+highlighter: pygments
 #github: [Repository metadata]
-highlighter: null
 
 # Github Unmodifiable Settings
 safe: true
