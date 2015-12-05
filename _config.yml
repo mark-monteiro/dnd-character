@@ -39,8 +39,8 @@ prose:
 collections:
   spells:
     output: true
-#  characters:
-#    output: true
+  characters:
+    output: true
 
 defaults:
   # Spell Defaults
@@ -52,3 +52,9 @@ defaults:
       layout: spell
       ritual: false
       time: "1 action"
+  -
+    scope:
+      path: ""
+      type: characters
+    values:
+      layout: character
