@@ -1,7 +1,8 @@
 ---
-  - 
+  -
     name: "Thorn Whip"
     prepared: true
+    quickinfo: ''
     classes: ["D"]
     type: "Transmutation"
     ritual: false
@@ -11,12 +12,12 @@
     components: "V,S,M"
     material-components: "stem of plant with thorns"
     duration: "Instantaneus"
-    description: > 
+    description: >
         You create a long, vine-Iike whip covered in thorns that lashes out at your command toward a creature in range.
         Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if
         the creature is Large or smaller, you pull the creature up to 10 feet closer to you. This spell's damage increases
         by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
-  - 
+  -
     name: "Produce Flame"
     prepared: true
     classes: ["D"]
@@ -34,7 +35,7 @@
         doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a
         creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes Id8 fire damage. This spell's
         damage increases by Id8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
-  - 
+  -
     name: "Entangle"
     prepared: true
     classes: ["D"]
@@ -53,7 +54,7 @@
         the spell must succeed on a Strength saving throw of be restrained by the entangling plants until the spell ends. A
         creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success
         it frees itself. When the spell ends, the Conjured plants wilt away.
-  - 
+  -
     name: "Detect Magic"
     prepared: true
     classes: ["D"]
@@ -71,7 +72,7 @@
         </br>
         The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of
         common metal, a thin sheet of lead, or 3 feet of wood or dirt.
-  - 
+  -
     name: "Pass Without Trace"
     prepared: true
     classes: ["D"]
@@ -87,7 +88,7 @@
         A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each
         creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can’t be
         tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.
-  - 
+  -
     name: "Moonbeam"
     prepared: true
     classes: ["D"]
@@ -106,9 +107,9 @@
         When a creature enters the spell's area for the first time
         on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a
         Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much on a successful one.
-        
+
         </br>
-        
+
         A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form
         and can't assume a different form until it leaves the spells light.
         </br>
@@ -117,7 +118,7 @@
         </br>
         At Higher Levels. When you cast this
         spell using a spell slot 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.
-  - 
+  -
     name: "Charm Person"
     prepared: true
     classes: ["D"]
@@ -133,12 +134,12 @@
         advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until
         the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as
         a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
-        
+
         </br>
-        
+
         When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for
         each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
-  - 
+  -
     name: "Cure Wounds"
     prepared: true
     classes: ["D"]
@@ -155,7 +156,7 @@
         </br>
         At Higher Levels. When you cast this spell using a spell
         slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
-  - 
+  -
     name: "Shillelagh"
     prepared: true
     classes: ["D"]
@@ -172,7 +173,7 @@
         your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon,
         and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if
         you cast it again or if you let go of the weapon.
-  - 
+  -
     name: "Thunderwave"
     prepared: true
     classes: ["D"]
@@ -194,3 +195,23 @@
         </br>
         At Higher Levels. When you cast this spell using
         a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
+  -
+    name: "Locate Object"
+    prepared: true
+    classes: ["D"]
+    type: "Divination"
+    ritual: false
+    level: 2
+    time: "1 Action"
+    range: "Self"
+    components: "V, S, M"
+    material-components: "a forked twig"
+    duration: "Concentration (up to 10 min.)"
+    description: >
+        Describe or name an object that is familiar to you. You sense the direction to the object’s location,as long as
+        that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement. The
+        spell can locate a specific object known to you, as long as you have seen it up close—within 30 feet—at least once.
+        <br/>
+        Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel,
+        jewelry, furniture, tool, or weapon. This spell can’t locate an object if any thickness of lead, even a thin
+        sheet, blocks a direct path between you and the object.
