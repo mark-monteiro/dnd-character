@@ -119,6 +119,13 @@ prose:
           label: "Duration"
           element: "text"
 
+    _characters:
+      - name: "spells"
+        field:
+          label: "Spells"
+          element: "multiselect"
+          options: "http://mark-monteiro.github.io/dnd-character/json/spells.jsonp?callback=spells"
+
 collections:
   spells:
     output: true
