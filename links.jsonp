@@ -1,6 +1,6 @@
 ---
 ---
-callback([
+spells([
 {% for post in site.posts reversed | sort: title %}
   {
     "text": "{{post.title | replace:'"','\"'}}",
