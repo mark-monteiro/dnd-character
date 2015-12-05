@@ -25,16 +25,84 @@ highlighter: pygments
 #github: [Repository metadata]
 
 prose:
-   rooturl: '_data'
-   siteurl: 'http://mark-monteiro.github.io/dnd-character/'
-   relativeLinks: 'mark-monteiro.github.io/dnd-character/links.jsonp'
-   media: 'media'
-   ignore:
-      - index.md
-      - _config.yml
-      - /_layouts
-      - /_includes
-      - .*
+  rooturl: ''
+  siteurl: 'http://mark-monteiro.github.io/dnd-character/'
+  relativeLinks: 'mark-monteiro.github.io/dnd-character/links.jsonp'
+  media: 'media'
+  ignore:
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /_sass
+    - /css
+    - /scripts
+    - .*
+  metadata:
+    _spells:
+      - name: "name"
+        field:
+          element: "text"
+
+      - name: "prepared"
+        field:
+          element: "checkbox"
+          value: false
+
+      - name: "classes"
+        field:
+          element: "multiselect"
+          options:
+            - name: Druid
+              value: druid
+            - name: Cleric
+              value: cleric
+
+      - name: "type"
+        field:
+          element: "select"
+          options:
+            - name: Abjuration
+              value: abjuration
+            - name: Enchantment
+              value: enchantment
+            - name: Transmutation
+              value: transmutation
+            - name: Conjuration
+              value: Conjuration
+            - name: Divination
+              value: divination
+
+      - name: "ritual"
+        field:
+          element: "checkbox"
+          value: false
+
+      - name: "level"
+        field:
+          element: "number"
+
+      - name: "time"
+        field:
+          element: "text"
+          label: "Casting Time"
+
+      - name: "range"
+        field:
+          element: "text"
+
+      - name: "components"
+        field:
+          element: "text"
+
+      - name: "material-components"
+        field:
+          element: "text"
+          label: "Material Components"
+          help: ex. "Additional meterial component required for the spell (i.e. a forked twig)"
+
+      - name: "duration"
+        field:
+          element: "text"
 
 collections:
   spells:
