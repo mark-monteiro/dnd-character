@@ -13,16 +13,16 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-
-# Github Defaults
-highlighter: pygments
-#github: [Repository metadata]
+url: "http://mark-monteiro.github.io/dnd-character" # the base hostname & protocol for your site
 
 # Github Unmodifiable Settings
 safe: true
 lsi: false
 source: .
+
+# Github Defaults
+highlighter: pygments
+#github: [Repository metadata]
 
 prose:
    rooturl: '_data'
@@ -35,3 +35,20 @@ prose:
       - /_layouts
       - /_includes
       - .*
+
+collections:
+  spells:
+    output: true
+#  characters:
+#    output: true
+
+defaults:
+  # Spell Defaults
+  -
+    scope:
+      path: ""
+      type: spells
+    values:
+      layout: spell
+      ritual: false
+      time: "1 action"

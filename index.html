@@ -7,9 +7,8 @@ title: Glorfindel
 
   <h1>Spells</h1>
 
-  {% assign grouped_spells = site.data.spells | where: "prepared", true | group_by:"level" %}
-
   <!-- Assigned Spells -->
+  {% assign grouped_spells = site.spells | where: "prepared", true | group_by:"level" | sort: 'name' %}
   <div class="panel-group spell-list" id="learned-spells" role="tablist" aria-multiselectable="true">
     {% for levelSpells in grouped_spells %}
       <h2>Level {{levelSpells.name}} Spells <span class="badge">{% if levelSpells.size > 0 %}{{levelSpells.items | size}}{% endif %}</span></h2>
@@ -18,7 +17,7 @@ title: Glorfindel
   </div>
 
   <!-- Other Spells -->
-  {% assign otherSpells = site.data.spells | where: "prepared", false | sort: 'level' %}
+  {% assign otherSpells = site.spells | where: "prepared", false | sort: 'level' %}
   <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#other-spells" aria-expanded="false" aria-controls="other-spells">
     Show/Hide Other Spells <span class="badge">{% if otherSpells.size > 0 %}{{otherSpells.items | size}}{% endif %}</span>
   </button>
@@ -27,4 +26,5 @@ title: Glorfindel
       {% include spell-list.html spellList=otherSpells %}
     </div>
   </div>
+
 </div>
