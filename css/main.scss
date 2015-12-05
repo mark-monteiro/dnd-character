@@ -63,34 +63,43 @@ $on-laptop:        800px;
   text-overflow: ellipsis;
 }
 
-.spell-list {
-   margin-left: 0;
-   list-style: none;
+#spell-list {
+  margin-left: 0;
+  list-style: none;
 
-   h3 {
+  .panel-heading {
+    padding: 0;
+    a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+  }
+
+  h3 {
     display: inline-block;
     margin: 10px 0;
-   }
+  }
 
-   .badge, h3 {
-      vertical-align: middle;
-   }
+  .badge, h3 {
+    vertical-align: middle;
+  }
 
-   > li {
-      margin-bottom: $spacing-unit;
+  > li {
+    margin-bottom: $spacing-unit;
 
-      dl.dl-horizontal {
-        $dtWidth: 100px;
-        dt {
-          width: $dtWidth;
-          &:after {
-            content: ":";
-          }
-        }
-
-        dd {
-          margin-left: $dtWidth + 10px;
+    dl.dl-horizontal {
+      $dtWidth: 100px;
+      dt {
+        width: $dtWidth;
+        &:after {
+          content: ":";
         }
       }
-   }
+
+      dd {
+        margin-left: $dtWidth + 10px;
+      }
+    }
+  }
 }
