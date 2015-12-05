@@ -20,7 +20,19 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 #github: [Repository metadata]
 highlighter: null
 
-# Github Unmodifiable
+# Github Unmodifiable Settings
 safe: true
 lsi: false
 source: .
+
+prose:
+   rooturl: '_data'
+   siteurl: 'http://mark-monteiro.github.io/dnd-character/'
+   relativeLinks: 'mark-monteiro.github.io/dnd-character/links.jsonp'
+   media: 'media'
+   ignore:
+      - index.md
+      - _config.yml
+      - /_layouts
+      - /_includes
+      - .*
