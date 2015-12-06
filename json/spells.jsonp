@@ -1,9 +1,9 @@
 ---
 ---
 spells([
-{% for spell in site.spells %}
+{% for spell in site.spells | sort: 'level' %}
    {
-      "name": "{{ spell.name }}",
+      "name": "{{spell.level}} - {{ spell.name }}",
       "value": "{{ spell.name }}"
    } {% unless forloop.last %},{% endunless %}
 {% endfor %}
