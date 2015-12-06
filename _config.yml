@@ -70,14 +70,20 @@ prose:
           options:
             - name: Abjuration
               value: abjuration
-            - name: Enchantment
-              value: enchantment
-            - name: Transmutation
-              value: transmutation
             - name: Conjuration
               value: Conjuration
             - name: Divination
               value: divination
+            - name: Enchantment
+              value: enchantment
+            - name: Evocation
+              value: evocation
+            - name: Illusion
+              value: illusion
+            - name: Necromancy
+              value: transmutation
+            - name: Transmutation
+              value: transmutation
 
       - name: "ritual"
         field:
