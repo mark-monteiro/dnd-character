@@ -30,6 +30,7 @@ prose:
   relativeLinks: 'mark-monteiro.github.io/dnd-character/links.jsonp'
   media: 'media'
   ignore:
+    - .gitignore
     - _config.yml
     - Gemfile
     - Gemfile.lock
@@ -43,6 +44,7 @@ prose:
     - /_sass
     - /css
     - /scripts
+    - /json
   metadata:
     _spells:
       - name: "name"
