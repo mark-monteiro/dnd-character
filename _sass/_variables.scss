@@ -1,0 +1,36 @@
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@mixin media-query-xs() {
+   @media screen and (max-width:767px) {
+      @content
+   }
+}
+
+@mixin media-query-sm() {
+   @media screen and (min-width:768px) {
+      @content
+   }
+}
+
+@mixin media-query-md() {
+   @media screen and (min-width:992px) {
+      @content
+   }
+}
+
+@mixin media-query-lg() {
+   @media screen and (min-width:1200px) {
+      @content
+   }
+}
