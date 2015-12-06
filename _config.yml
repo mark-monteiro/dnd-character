@@ -56,9 +56,9 @@ prose:
           element: "multiselect"
           options:
             - name: Druid
-              value: D
+              value: Druid
             - name: Cleric
-              value: C
+              value: Cleric
 
       - name: "type"
         field:

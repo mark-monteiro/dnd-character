@@ -1,0 +1,47 @@
+{% assign character = include.character %}
+
+<h1>
+   {{character.name}}
+</h1>
+
+<section class='spells'>
+  <h2>Spells</h2>
+
+  <!-- Assigned Spells -->
+  {% assign grouped_spells = site.spells | group_by:"level" | sort: 'name' %}
+  <div class="panel-group spell-list" id="learned-spells" role="tablist" aria-multiselectable="true">
+    {% for levelSpells in grouped_spells %}
+      <h3>
+        Level {{levelSpells.name}} Spells
+        {%comment%}<span class="badge">{% if levelSpells.size > 0 %}{{levelSpells.items | size}}{% endif %}</span>{%endcomment%}
+      </h3>
+
+      {% for spell in levelSpells.items %}
+        {% if character.spells contains spell.name %}
+          {% include spell-collapse-panel.html spell=spell %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+
+  <!-- Other Spells -->
+  {% assign otherSpells = site.spells | where: "prepared", false | sort: 'level' %}
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#other-spells" aria-expanded="false" aria-controls="other-spells">
+    Show/Hide Other Spells <span class="badge">{% if otherSpells.size > 0 %}{{otherSpells.items | size}}{% endif %}</span>
+  </button>
+  <div class="collapse spell-list" id="other-spells" >
+    <div class="panel-group spell-list" id="learned-spells" role="tablist" aria-multiselectable="true">
+      {% for spell in site.spells %}
+          {% unless character.spells contains spell.name %}
+            {% if spell.classes contains character.class %}
+               {% include spell-collapse-panel.html spell=spell %}
+            {% endif %}
+          {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class='character-description'>
+   {{character.content}}
+</section>
