@@ -50,12 +50,6 @@ prose:
           label: "Name"
           element: "text"
 
-      - name: "prepared"
-        field:
-          label: "Prepared"
-          element: "checkbox"
-          value: false
-
       - name: "classes"
         field:
           label: "Classes"
