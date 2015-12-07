@@ -39,27 +39,27 @@ layout: "default"
    </div>
 </div>
 
-<table id="spell-list" class="table table-striped table-bordered datatable" cellspacing="0" width="100%"
+<table id="spell-list" class="table table-striped table-bordered responsive nowrap datatable" cellspacing="0" width="100%"
    data-order='[[0, "asc"]]' >
      <thead>
          <tr>
-            <th>Name</th>
-            <th>Classes</th>
-            <th>Ritual</th>
-            <th>Level</th>
-            <th>Casting Time</th>
-            <th>Range</th>
-            <th>Components</th>
-            <th>Duration</th>
+            <th data-priority='1'>Name</th>
+            <th data-priority='2'>Level</th>
+            <th data-priority='100'>Classes</th>
+            <th data-prioroty='100'>Ritual</th>
+            <th data-priority='100'>Casting Time</th>
+            <th data-priority='100'>Range</th>
+            <th data-priority='100'>Components</th>
+            <th data-priority='100'>Duration</th>
          </tr>
       </thead>
       <tbody>
          {% for spell in site.spells %}
             <tr>
                <td><a href="{{site.baseurl}}/spells/{{spell.name | slugify}}.html">{{spell.name}}</a></td>
-               <td>{{spell.classes}}</td>
-               <td>{{spell.ritual}}</td>
                <td>{{spell.level}}</td>
+               <td>{{spell.classes | join: ', '}}</td>
+               <td>{{spell.ritual}}</td>
                <td>{{spell.castingTime}}</td>
                <td>{{spell.range}}</td>
                <td>{{spell.components}}</td>
