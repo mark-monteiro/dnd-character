@@ -1,6 +1,5 @@
 ---
 name: Charm Person
-prepared: true
 classes:
   - Druid
 type: Enchantment

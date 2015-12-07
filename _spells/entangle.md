@@ -1,6 +1,5 @@
 ---
 name: "Entangle"
-prepared: true
 classes: ["Druid"]
 type: "Conjuration"
 ritual: false

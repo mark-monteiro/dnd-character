@@ -1,6 +1,5 @@
 ---
 name: "Pass Without Trace"
-prepared: true
 classes: ["Druid"]
 type: "Abjuration"
 ritual: false

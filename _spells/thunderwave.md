@@ -1,6 +1,5 @@
 ---
 name: "Thunderwave"
-prepared: true
 classes: ["Druid"]
 type: "Evocation"
 ritual: false

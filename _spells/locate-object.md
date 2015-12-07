@@ -1,6 +1,5 @@
 ---
 name: "Locate Object"
-prepared: true
 classes: ["Druid"]
 type: "Divination"
 ritual: false

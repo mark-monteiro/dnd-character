@@ -1,6 +1,5 @@
 ---
 name: "Detect Magic"
-prepared: true
 classes: ["Druid"]
 type: "Divination"
 ritual: true

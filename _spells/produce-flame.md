@@ -1,6 +1,5 @@
 ---
 name: "Produce Flame"
-prepared: true
 classes: ["Druid"]
 type: "Conjuration"
 ritual: false

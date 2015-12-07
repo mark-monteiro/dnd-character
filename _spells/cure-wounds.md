@@ -1,6 +1,5 @@
 ---
 name: "Cure Wounds"
-prepared: true
 classes: ["Druid"]
 type: "Evocation"
 ritual: false

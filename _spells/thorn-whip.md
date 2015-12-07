@@ -1,6 +1,5 @@
 ---
 name: "Thorn Whip"
-prepared: true
 quickinfo: ''
 classes: ["Druid"]
 type: "Transmutation"
