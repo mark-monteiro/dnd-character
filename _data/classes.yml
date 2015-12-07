@@ -1,0 +1,6 @@
+- name: Druid
+  value: Druid
+  spellcaster: true
+- name: Cleric
+  value: Cleric
+  spellcaster: true

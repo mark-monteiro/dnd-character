@@ -57,11 +57,7 @@ prose:
         field:
           label: "Classes"
           element: "multiselect"
-          options:
-            - name: Druid
-              value: Druid
-            - name: Cleric
-              value: Cleric
+          options: "http://mark-monteiro.github.io/dnd-character/json/classes.jsonp?callback=classes"
 
       - name: "type"
         field:

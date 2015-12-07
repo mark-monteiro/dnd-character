@@ -1,0 +1,10 @@
+---
+---
+classes([
+{% for class in site.data.classes | sort: 'name' %}
+   {
+      "name": "{{class.name}}",
+      "value": "{{class.value}}"
+   } {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]);
