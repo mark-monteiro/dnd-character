@@ -65,21 +65,21 @@ prose:
           element: "select"
           options:
             - name: Abjuration
-              value: abjuration
+              value: Abjuration
             - name: Conjuration
               value: Conjuration
             - name: Divination
-              value: divination
+              value: Divination
             - name: Enchantment
-              value: enchantment
+              value: Enchantment
             - name: Evocation
-              value: evocation
+              value: Evocation
             - name: Illusion
-              value: illusion
+              value: Illusion
             - name: Necromancy
-              value: transmutation
+              value: Necromancyion
             - name: Transmutation
-              value: transmutation
+              value: Transmutation
 
       - name: "ritual"
         field:
@@ -106,6 +106,7 @@ prose:
         field:
           label: "Components"
           element: "text"
+          help: "V(verbal), S(somatic) and/or M(material)"
 
       - name: "material-components"
         field:
