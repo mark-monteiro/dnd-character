@@ -4,22 +4,22 @@
    <h3>
       {{spell.name}}
       {%if spell.ritual%}<i class='fa fa-magic' data-toggle="tooltip" data-placement="top" title="Ritual (10 minutes)"></i>{%endif%}
-      <small>({{spell.type}})</small>
+      <small>({{spell.school}})</small>
    </h3>
    <div class='row'>
       <div class='col-md-4 col-xs-12'>
          <dl class='dl-horizontal'>
-            <dt>Casting Time</dt><dd>{{spell.time}}</dd>
+            <dt>Casting Time</dt><dd>{{spell.castingTime}}</dd>
             <dt>Range</dt><dd>{{spell.range}}</dd>
             <dt>Components</dt>
             <dd>
                {{spell.components}}
-               {%if spell.material-components %}
-               <i class='fa fa-asterisk' data-toggle="tooltip" data-placement="top" title="{{spell.material-components}}"></i>
+               {%if spell.material %}
+               <i class='fa fa-asterisk' data-toggle="tooltip" data-placement="top" title="{{spell.material}}"></i>
                {%endif%}
             </dd>
             <!--<dt>Components</dt><dd class='overflow-ellipses' data-toggle='tooltip' title='{{spell.components}}'>{{spell.components}}</dd>-->
-            <dt>Duration</dt><dd>{{spell.duration}}</dd>
+            <dt>Duration</dt><dd>{%if spell.concentration %}Concentration, {%endif%}{{spell.duration}}</dd>
          </dl>
        </div>
        <div class='col-md-8 col-xs-12'>

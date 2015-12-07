@@ -1,13 +1,14 @@
 ---
 name: "Cure Wounds"
 classes: ["Druid"]
-type: "Evocation"
+school: "Evocation"
 ritual: false
 level: 1
-time: "1 action"
+castingTime: "1 action"
 range: "Touch"
 components: "V,S"
 duration: "Instantaneus"
+concentration: false
 ---
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This
 spell has no effect on undead or constructs.

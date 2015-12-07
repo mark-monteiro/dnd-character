@@ -59,9 +59,9 @@ prose:
           element: "multiselect"
           options: "http://mark-monteiro.github.io/dnd-character/json/classes.jsonp?callback=classes"
 
-      - name: "type"
+      - name: "school"
         field:
-          label: "Spell Type"
+          label: "School Of Magic"
           element: "select"
           options:
             - name: Abjuration
@@ -92,7 +92,7 @@ prose:
           label: "Level"
           element: "number"
 
-      - name: "time"
+      - name: "castingTime"
         field:
           label: "Casting Time"
           element: "text"
@@ -108,9 +108,9 @@ prose:
           element: "text"
           help: "V(verbal), S(somatic) and/or M(material)"
 
-      - name: "material-components"
+      - name: "material"
         field:
-          label: "Material Components"
+          label: "Material Component(s)"
           element: "text"
           help: ex. "Additional meterial component required for the spell (i.e. a forked twig)"
 
@@ -118,6 +118,12 @@ prose:
         field:
           label: "Duration"
           element: "text"
+
+      - name: "concentration"
+        field:
+          label: "Concentration"
+          element: "checkbox"
+          help: check if this spell requires concentration
 
     _characters:
       - name: "spells"

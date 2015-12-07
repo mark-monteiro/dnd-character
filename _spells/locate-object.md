@@ -1,14 +1,15 @@
 ---
 name: "Locate Object"
 classes: ["Druid"]
-type: "Divination"
+school: "Divination"
 ritual: false
 level: 2
-time: "1 Action"
+castingTime: "1 Action"
 range: "Self"
 components: "V, S, M"
-material-components: "a forked twig"
-duration: "Concentration (up to 10 min.)"
+material: "a forked twig"
+duration: "up to 10 min."
+concentration: true
 ---
 Describe or name an object that is familiar to you. You sense the direction to the object’s location,as long as
 that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement. The

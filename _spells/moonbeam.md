@@ -1,14 +1,15 @@
 ---
 name: "Moonbeam"
 classes: ["Druid"]
-type: "Evocation"
+school: "Evocation"
 ritual: false
 level: 2
-time: "1 action"
+castingTime: "1 action"
 range: "120 ft."
 components: "V,S,M"
-material-components: "several seeds of any moonseed plant and a piece of opalescent feldspar"
-duration: "Concentration (Up to 1 min.)"
+material: "several seeds of any moonseed plant and a piece of opalescent feldspar"
+duration: "Up to 1 min."
+concentration: true
 ---
 A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range.
 Until the spell ends, dim light fills the cylinder.

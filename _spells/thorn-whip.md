@@ -2,14 +2,15 @@
 name: "Thorn Whip"
 quickinfo: ''
 classes: ["Druid"]
-type: "Transmutation"
+school: "Transmutation"
 ritual: false
 level: 0
-time: "1 action"
+castingTime: "1 action"
 range: "30 ft."
 components: "V,S,M"
-material-components: "stem of plant with thorns"
+material: "stem of plant with thorns"
 duration: "Instantaneus"
+concentration: false
 ---
 You create a long, vine-Iike whip covered in thorns that lashes out at your command toward a creature in range.
 Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if

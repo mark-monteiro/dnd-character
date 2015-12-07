@@ -1,13 +1,14 @@
 ---
 name: "Produce Flame"
 classes: ["Druid"]
-type: "Conjuration"
+school: "Conjuration"
 ritual: false
 level: 0
-time: "1 action"
+castingTime: "1 action"
 range: "Self"
 components: "V,S"
 duration: "10 minutes"
+concentration: false
 ---
 A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor
 your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The

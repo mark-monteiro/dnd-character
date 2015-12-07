@@ -27,7 +27,7 @@ layout: "default"
 
             <div class="form-group col-md-3">
                <label for="search-class">Level</label>
-               <select class="form-control" data-target-col='4'>
+               <select class="form-control" data-target-col='3'>
                   <option value="">-- Select --</option>
                   {% for level in (1..9) %}
                      <option value='{{level}}'>{{level}}</option>
@@ -45,10 +45,9 @@ layout: "default"
          <tr>
             <th>Name</th>
             <th>Classes</th>
-            <th>Type</th>
             <th>Ritual</th>
             <th>Level</th>
-            <th>Time</th>
+            <th>Casting Time</th>
             <th>Range</th>
             <th>Components</th>
             <th>Duration</th>
@@ -59,13 +58,12 @@ layout: "default"
             <tr>
                <td><a href="{{site.baseurl}}/spells/{{spell.name | slugify}}.html">{{spell.name}}</a></td>
                <td>{{spell.classes}}</td>
-               <td>{{spell.type}}</td>
                <td>{{spell.ritual}}</td>
                <td>{{spell.level}}</td>
-               <td>{{spell.time}}</td>
+               <td>{{spell.castingTime}}</td>
                <td>{{spell.range}}</td>
                <td>{{spell.components}}</td>
-               <td>{{spell.duration}}</td>
+               <td>{%if spell.concentration%}Concentration, {%endif%}{{spell.duration}}</td>
             </tr>
          {% endfor %}
       </tbody>

@@ -2,15 +2,16 @@
 name: Charm Person
 classes:
   - Druid
-type: Enchantment
+school: Enchantment
 ritual: false
 level: 1
-time: 1 action
+castingTime: 1 action
 range: 30 ft.
 components: "V,S"
 duration: 1 Hour
 published: true
-"material-components": ""
+"material": ""
+concentration: false
 ---
 
 You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.

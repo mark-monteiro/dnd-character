@@ -1,14 +1,15 @@
 ---
 name: "Shillelagh"
 classes: ["Druid"]
-type: "Transmutation"
+school: "Transmutation"
 ritual: false
 level: 0
-time: "1 bonus action"
+castingTime: "1 bonus action"
 range: "Touch"
 components: "V, S, M"
-material-components: "mistletoe, a shamrock leaf, and a club or quarterstaff"
+material: "mistletoe, a shamrock leaf, and a club or quarterstaff"
 duration: "1 Minutes"
+concentration: false
 ---
 The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use
 your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon,

@@ -1,13 +1,14 @@
 ---
 name: "Entangle"
 classes: ["Druid"]
-type: "Conjuration"
+school: "Conjuration"
 ritual: false
 level: 1
-time: "1 action"
+castingTime: "1 action"
 range: "30 ft."
 components: "V,S,M"
-duration: "Concentration (up to 1 min.)"
+duration: "up to 1 min."
+concentration: true
 ---
 Grasping weeds and vines sprout from the ground in a 20 foot square starting from a point within range. For the
 duration, these plants turn the ground in the area into difficult terrain.

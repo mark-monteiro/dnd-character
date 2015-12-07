@@ -1,13 +1,14 @@
 ---
 name: "Detect Magic"
 classes: ["Druid"]
-type: "Divination"
+school: "Divination"
 ritual: true
 level: 1
-time: "1 action"
+castingTime: "1 action"
 range: "Self"
 components: "V,S"
-duration: "Concentration (up to 10 min.)"
+duration: "up to 10 min."
+concentration: false
 ---
 For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use
 your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its
