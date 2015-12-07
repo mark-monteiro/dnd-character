@@ -1,7 +1,7 @@
 ---
 name: "Pass Without Trace"
 prepared: true
-classes: ["D"]
+classes: ["Druid"]
 type: "Abjuration"
 ritual: false
 level: 2

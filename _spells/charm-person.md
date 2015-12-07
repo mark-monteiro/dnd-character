@@ -1,9 +1,9 @@
 ---
 name: Charm Person
 prepared: true
-classes: 
-  - D
-type: enchantment
+classes:
+  - Druid
+type: Enchantment
 ritual: false
 level: 1
 time: 1 action

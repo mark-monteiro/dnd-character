@@ -1,7 +1,7 @@
 ---
 name: "Locate Object"
 prepared: true
-classes: ["D"]
+classes: ["Druid"]
 type: "Divination"
 ritual: false
 level: 2

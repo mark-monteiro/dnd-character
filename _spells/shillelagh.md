@@ -1,7 +1,7 @@
 ---
 name: "Shillelagh"
 prepared: true
-classes: ["D"]
+classes: ["Druid"]
 type: "Transmutation"
 ritual: false
 level: 0

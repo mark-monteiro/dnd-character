@@ -1,7 +1,7 @@
 ---
 name: "Moonbeam"
 prepared: true
-classes: ["D"]
+classes: ["Druid"]
 type: "Evocation"
 ritual: false
 level: 2

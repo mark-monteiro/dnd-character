@@ -1,8 +1,8 @@
 ---
 name: "Detect Magic"
 prepared: true
-classes: ["D"]
-type: "divination"
+classes: ["Druid"]
+type: "Divination"
 ritual: true
 level: 1
 time: "1 action"

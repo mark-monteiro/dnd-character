@@ -2,7 +2,7 @@
 name: "Thorn Whip"
 prepared: true
 quickinfo: ''
-classes: ["D"]
+classes: ["Druid"]
 type: "Transmutation"
 ritual: false
 level: 0
