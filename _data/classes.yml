@@ -4,3 +4,24 @@
 - name: Cleric
   value: Cleric
   spellcaster: true
+- name: Sorcerer
+  value: Sorcerer
+  spellcaster: true
+- name: Wizard
+  value: Wizard
+  spellcaster: true
+- name: Ranger
+  value: Ranger
+  spellcaster: true
+- name: Paladin
+  value: Paladin
+  spellcaster: true
+- name: Ritual Caster
+  value: Ritual Caster
+  spellcaster: true
+- name: Bard
+  value: Bard
+  spellcaster: true
+- name: Warlock
+  value: Warlock
+  spellcaster: true
