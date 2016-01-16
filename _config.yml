@@ -33,6 +33,7 @@ prose:
   ignore:
     - .gitignore
     - _config.yml
+    - Rakefile
     - Gemfile
     - Gemfile.lock
     - about.md
