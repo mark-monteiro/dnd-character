@@ -51,8 +51,7 @@ $(function () {
                var filterData = input.val().toLowerCase();
                var targetData = data[target].toLowerCase();
 
-               if(input.is("[type='text']"))
-               {
+               if(input.data('match-type') === 'contains') {
                   inputValid = targetData.indexOf(filterData) > -1;
                }
                else

@@ -11,13 +11,14 @@ layout: "default"
                <label for="search-name">Name</label>
                <input type="text" class="form-control" id="search-name" placeholder="Name" autofocus
                   data-provide="typeahead"
-                  data-source='{{site.spells | map: "name" | jsonify | }}'
-                  data-target-col='0'>
+                  data-source='{{site.spells | map: "name" | jsonify | replace: "'", "&apos;" }}'
+                  data-target-col='0'
+                  data-match-type='contains'>
             </div>
 
             <div class="form-group col-md-3">
                <label for="search-class">Class</label>
-               <select class="form-control" data-target-col='1'>
+               <select class="form-control" data-target-col='2' data-match-type='contains'>
                   <option value="">-- Select --</option>
                   {% for class in site.data.classes | where: 'spellcaster', true %}
                      <option value='{{class.value}}'>{{class.name}}</option>
@@ -27,7 +28,7 @@ layout: "default"
 
             <div class="form-group col-md-3">
                <label for="search-class">Level</label>
-               <select class="form-control" data-target-col='3'>
+               <select class="form-control" data-target-col='1'>
                   <option value="">-- Select --</option>
                   {% for level in (1..9) %}
                      <option value='{{level}}'>{{level}}</option>
