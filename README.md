@@ -4,11 +4,16 @@ Quick reference for your character's spells.
 
 ## Usage
 - Fork the repository
+- Update _config.yml appropriately
 - Add your character (in the '_characters' directory)
 - Run Jekyll:
 ```
 bundle exec jekyll --watch
 ```
+
+## Editing Content
+This site is configured to use [prose.io](http://prose.io), which provides a user-friendly interface for editing content and directly committing it to your GitHub repository.
+The edit links throughout the site will link you to the content editor in prose.
 
 ## Adding More Spells
 - Add your JSON file of spells (_data/spells.json)
