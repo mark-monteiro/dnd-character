@@ -22,7 +22,8 @@ lsi: false
 source: .
 
 # Github Defaults
-highlighter: pygments
+markdown:    kramdown
+highlighter: rouge
 #github: [Repository metadata]
 
 prose:
@@ -149,6 +150,7 @@ defaults:
       layout: spell
       ritual: false
       time: "1 action"
+  # Character defaults
   -
     scope:
       path: ""
