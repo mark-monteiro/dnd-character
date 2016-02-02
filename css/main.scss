@@ -10,6 +10,10 @@
         "syntax-highlighting"
 ;
 
+body {
+  font-size: $base-font-size;
+}
+
 // Enable tooltips on fa icons
 .fa[data-toggle="tooltip"] {
   display: inline-block;
@@ -45,20 +49,43 @@
     display: inline-block;
     margin: 10px 0;
   }
+}
 
-  .spell {
-    dl.dl-horizontal {
-      $dtWidth: 100px;
-      dt {
-        width: $dtWidth;
-        &:after {
-          content: ":";
-        }
-      }
+.spell {
+  dl.dl-horizontal {
+    $dtWidth: 125px;
+    dt {
+      width: $dtWidth;
+      float: left;
+      text-align: right;
 
-      dd {
-        margin-left: $dtWidth + 10px;
+      &:after {
+        content: ":";
       }
     }
+
+    dd {
+      margin-left: $dtWidth + 10px;
+    }
+  }
+}
+
+.search-form {
+  input, select {
+    font-size: 2em;
+    height: 2em;
+  }
+  ul.typeahead {
+    font-size: 2em;
+  }
+}
+
+table#spell-list {
+  td > .spell {
+    white-space: normal;
+  }
+
+  tr.expanded td:first-child .fa:before {
+    content: "-";
   }
 }
