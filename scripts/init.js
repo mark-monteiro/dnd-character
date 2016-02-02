@@ -16,6 +16,7 @@ $(function () {
       var dataTable = $(this);
 
       dataTable = dataTable.DataTable({
+         paging: false,
          // dom: "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
          //      "<'row'<'col-sm-12'tr>>" +
          //      "<'row'<'col-sm-5'i><'col-sm-7'p>>",
@@ -65,5 +66,21 @@ $(function () {
             return success;
          }
       );
+   });
+
+   // Get child rows with ajax
+   $('.datatable tr[data-child-href] td:first-child').click(function() {
+      var tr = $(this).closest('tr')
+      var row = tr.closest('table').DataTable().row(tr);
+
+      if(tr.hasClass('expanded')) {
+         row.child.hide();
+         tr.removeClass('expanded');
+      } else {
+         $.get(tr.data('child-href'), function(data, status, jqXHR) {
+            row.child($(data).find('.spell').addClass('container-fluid')).show();
+            tr.addClass('expanded');
+         });
+      }
    });
 });

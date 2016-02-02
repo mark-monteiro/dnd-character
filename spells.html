@@ -11,14 +11,14 @@ layout: "default"
                <label for="search-name">Name</label>
                <input type="text" class="form-control" id="search-name" placeholder="Name" autofocus
                   data-provide="typeahead"
-                  data-source='{{site.spells | map: "name" | jsonify | replace: "'", "&apos;" }}'
-                  data-target-col='0'
-                  data-match-type='contains'>
+                  data-target-col='1'
+                  data-match-type='contains'
+                  data-source='{{site.spells | map: "name" | jsonify | replace: "'", "&apos;" }}'><!--"-->
             </div>
 
             <div class="form-group col-md-3">
                <label for="search-class">Class</label>
-               <select class="form-control" data-target-col='2' data-match-type='contains'>
+               <select class="form-control" data-target-col='3' data-match-type='contains'>
                   <option value="">-- Select --</option>
                   {% for class in site.data.classes | where: 'spellcaster', true %}
                      <option value='{{class.value}}'>{{class.name}}</option>
@@ -28,9 +28,9 @@ layout: "default"
 
             <div class="form-group col-md-3">
                <label for="search-class">Level</label>
-               <select class="form-control" data-target-col='1'>
+               <select class="form-control" data-target-col='2'>
                   <option value="">-- Select --</option>
-                  {% for level in (1..9) %}
+                  {% for level in (0..9) %}
                      <option value='{{level}}'>{{level}}</option>
                   {% endfor %}
                </select>
@@ -40,10 +40,11 @@ layout: "default"
    </div>
 </div>
 
-<table id="spell-list" class="table table-striped table-bordered responsive nowrap datatable" cellspacing="0" width="100%"
-   data-order='[[0, "asc"]]' >
+<table id="spell-list" class="table table-striped table-bordered nowrap datatable" cellspacing="0" width="100%"
+   data-order='[[1, "asc"]]' data-column-defs='[{"targets":[3],"visible":false}]'>
      <thead>
          <tr>
+            <th></th>
             <th data-priority='1'>Name</th>
             <th data-priority='2'>Level</th>
             <th data-priority='100'>Classes</th>
@@ -56,7 +57,8 @@ layout: "default"
       </thead>
       <tbody>
          {% for spell in site.spells %}
-            <tr>
+            <tr data-child-href="{{site.baseurl}}/spells/{{spell.name | slugify}}.html">
+               <td><button class='btn btn-default'><i class='fa fa-plus'></i></button></td>
                <td><a href="{{site.baseurl}}/spells/{{spell.name | slugify}}.html">{{spell.name}}</a></td>
                <td>{{spell.level}}</td>
                <td>{{spell.classes | join: ', '}}</td>
