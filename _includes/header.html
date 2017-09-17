@@ -18,8 +18,8 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Character<span class="caret"></span></a>
             <ul class="dropdown-menu">
               {% for character in site.characters %}
-                <li class="active">
-                  <a href="{{site.baseurl}}/characters/{{character.name | downcase}}.html">{{character.name}} <span class="sr-only">(current)</span></a>
+                <li>
+                  <a href="{{character.url}}">{{character.name}} <span class="sr-only">(current)</span></a>
                 </li>
               {% endfor %}
             </ul>
