@@ -1,6 +1,3 @@
-# Ignore changes to spells
-_spells/
-
 _site
 .sass-cache
 .jekyll-metadata
