@@ -36,5 +36,4 @@ spells:
   # Level 6
 
 ---
-
 Half-Elf Druid.
