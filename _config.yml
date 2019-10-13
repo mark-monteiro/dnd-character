@@ -15,15 +15,10 @@ url: "https://dnd-characters.markmonteiro.info" # the base hostname & protocol f
 github-username: "mark-monteiro"
 github-repo-url: "https://github.com/mark-monteiro/dnd-character/"
 
-# Github Unmodifiable Settings
-safe: true
-lsi: false
-source: .
-
-# Github Defaults
-markdown:    kramdown
-highlighter: rouge
-#github: [Repository metadata]
+exclude:
+  - Rakefile
+  - README.md
+  - CNAME
 
 prose:
   rooturl: ''
