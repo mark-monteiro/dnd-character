@@ -2,5 +2,41 @@
 layout: default
 ---
 
-{% assign defaultCharacter = site.characters[0] %}
-{% include character.html character=defaultCharacter %}
+<h1>D&D Character Viewer</h1>
+
+<p>
+    There are countless websites/apps for digitally storing information on your
+    D&D characters. What makes this one better than the rest? This one is mine!
+</p>
+<p>
+    The main reason I built this website was to have a free (and ad-free)
+    solution to manage the spell lists for each of my characters. As such, all
+    you can configure for each character is a short bio and spell list. It's
+    unlikely that I'll add more functionality to this website in the future, but
+    you never know! In the meantime, I think the spell search functionality may
+    be the best I have found anywhere else, so I hope you can also find that
+    useful!
+</p>
+<p>
+    This website is built using Jekyll and hosted on GitHub pages. It is
+    integrated with <a href='https://prose.io/'>prose.io</a> to enable easy
+    editing of the markdown content of the site if using an IDE isn't your cup
+    of tea.
+</p>
+<p>
+    This website is only designed to store profiles on my own characters. If you
+    want to store your own characters you can
+    <a href='https://github.com/mark-monteiro/dnd-character'>fork the repository</a>
+    and then follow the instructions in the
+    <a href='https://github.com/mark-monteiro/dnd-character/blob/gh-pages/README.md'>README file</a>
+    to alter the site as you wish.
+</p>
+
+<h2>My Characters</h2>
+<ul>
+    {% for character in site.characters %}
+        <li>
+            <a href="{{character.url}}">{{character.name}}</a>
+        </li>
+    {% endfor %}
+</ul>
