@@ -17,14 +17,14 @@
   <h2>Spells</h2>
 
   <!-- Assigned Spells -->
+  <!-- Loop through the entire list of spells -->
   {% assign grouped_spells = site.spells | group_by:"level" | sort: 'name' %}
   <div class="panel-group spell-list" id="learned-spells" role="tablist" aria-multiselectable="true">
     {% for levelSpells in grouped_spells %}
-      <h3>
-        Level {{levelSpells.name}} Spells
-        {%comment%}<span class="badge">{% if levelSpells.size > 0 %}{{levelSpells.items | size}}{% endif %}</span>{%endcomment%}
-      </h3>
 
+      <h3>Level {{levelSpells.name}} Spells</h3>
+
+      <!-- Loop through the character spells and display this spell if it is a match -->
       {% for spell in levelSpells.items %}
         {% if character.spells contains spell.name %}
           {% include spell-collapse-panel.html spell=spell %}
