@@ -11,7 +11,7 @@ email: mark.monteiro23@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Store all your D&D characters online! Save a bio and spell list for each of
   your characters. Also features a searchable and filterable list of all spells.
-url: "http://mark-monteiro.github.io" # the base hostname & protocol for your site
+url: "https://dnd-characters.markmonteiro.info" # the base hostname & protocol for your site
 github-username: "mark-monteiro"
 
 # Github Unmodifiable Settings
@@ -26,8 +26,8 @@ highlighter: rouge
 
 prose:
   rooturl: ''
-  siteurl: 'http://mark-monteiro.github.io/'
-  relativeLinks: 'mark-monteiro.github.io/links.jsonp'
+  siteurl: 'https://dnd-characters.markmonteiro.info/'
+  relativeLinks: 'dnd-characters.markmonteiro.info/links.jsonp'
   media: 'media'
   ignore:
     - .gitignore
@@ -57,7 +57,7 @@ prose:
         field:
           label: "Classes"
           element: "multiselect"
-          options: "http://mark-monteiro.github.io/json/classes.jsonp?callback=classes"
+          options: "https://dnd-characters.markmonteiro.info/json/classes.jsonp?callback=classes"
 
       - name: "school"
         field:
@@ -130,7 +130,7 @@ prose:
         field:
           label: "Spells"
           element: "multiselect"
-          options: "http://mark-monteiro.github.io/json/spells.jsonp?callback=spells"
+          options: "https://dnd-characters.markmonteiro.info/json/spells.jsonp?callback=spells"
 
 collections:
   spells:
